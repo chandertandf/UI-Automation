@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UBX Application">
+
+	<listeners>
+		<listener class-name="com.tnf.ubx.qa.extendReport.ExtentReportListener" />
+	
+	</listeners>
+
+	<test name="UBX Search flow">
+		<classes>
+			<class name="com.tnf.ubx.qa.tests.UbxSearchPageTest"></class>
+			<class name="com.tnf.ubx.qa.tests.UbxSearchSubCategoryPageTest"></class>
+		</classes>
+	</test>
+</suite>

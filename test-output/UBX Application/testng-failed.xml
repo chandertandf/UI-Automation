@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UBX Application]">
+  <listeners>
+    <listener class-name="com.tnf.ubx.qa.extendReport.ExtentReportListener"/>
+  </listeners>
+  <test name="UBX Search flow">
+    <classes>
+      <class name="com.tnf.ubx.qa.tests.UbxSearchPageTest"/>
+      <class name="com.tnf.ubx.qa.tests.UbxSearchSubCategoryPageTest"/>
+    </classes>
+  </test> <!-- UBX Search flow -->
+  <test name="UBX Search flow(failed)">
+    <classes>
+      <class name="com.tnf.ubx.qa.tests.UbxSearchPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="test_click_on_all_element"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.tnf.ubx.qa.tests.UbxSearchPageTest -->
+      <class name="com.tnf.ubx.qa.tests.UbxSearchSubCategoryPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.tnf.ubx.qa.tests.UbxSearchSubCategoryPageTest -->
+    </classes>
+  </test> <!-- UBX Search flow(failed) -->
+</suite> <!-- Failed suite [UBX Application] -->
